@@ -17,3 +17,5 @@ console.log(3 === "3");
 console.log(3 != 3);
 
 // Operadores lógicos
+console.log((true) && (true)); // y "lógico"
+console.log((true) || (false)); // o "lógico" 
