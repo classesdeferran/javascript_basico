@@ -1,13 +1,30 @@
-// JUEGO PIEDRA-PAPEL-TIJERAS v2
-// Interficie de ventanas
+// JUEGO PIEDRA-PAPEL-TIJERAS v3
+// Revisamos que no haya errores por partes del usuario
 
+let nombre_jugador = ""
+let nombre_incorrecto = true
+do {
 // preguntar al usuario su nombre
 let mensaje_inicial =`
 ¡Vamos a jugar al Piedra-Papel-Tijeras!
 
 Me llamo PC. ¿Y tu?
 `
-let nombre_jugador = prompt(mensaje_inicial)
+    nombre_jugador = prompt(mensaje_inicial)
+
+if (nombre_jugador.trim().length > 0 && nombre_jugador != null) {
+    console.log("Condición solucionada");
+    nombre_incorrecto = false
+}
+// console.log("tecla :", nombre_jugador);
+// if ( nombre_jugador.trim().length > 0 ) {
+//     console.log("Condición solucionada");
+//     nombre_incorrecto = false
+// }
+
+} while (nombre_incorrecto)
+
+console.log(nombre_jugador);
 
 let menu = `
 OPCIONES DEL JUEGO
@@ -20,19 +37,11 @@ a la jugada que prefieres
 3 - Tijeras
 `
 // Ya tenemos la jugada del humano
-let jugada_humano = prompt(menu)
-
-// aclaración de como añadir texto a un string
-// let string1 = "A" + "B" + "C"
-// let string2 = ""
-// console.log("Inicialmente string2 vale", string2);
-// string2 += "A"
-// console.log(string2);
-// string2 += "B"
-// console.log(string2);
-// string2 += "C"
-// console.log(string2);
-
+let jugada_humano = parseInt(prompt(menu))
+alert(typeof jugada_humano)
+if (jugada_humano != 1 || jugada_humano != 2 || jugada_humano != 3 ) {
+    alert("Partida finalizada. ¡Hasta pronto!")
+} else {
 
 let texto_resolucion_partida = ""
 
@@ -69,12 +78,16 @@ alert(texto_resolucion_partida)
 
 
 
+
+
+}
+  
+
+
 // Notesé que también en este caso `min` será incluido y `max` excluido
+
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min) + min);
   }
-
-
-  

@@ -1,3 +1,7 @@
+// JUEGO PIEDRA-PAPEL-TIJERAS v1
+// Lógica de la partida
+
+
 let menu = `
 OPCIONES DEL JUEGO
 ==================
