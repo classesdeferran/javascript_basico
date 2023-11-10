@@ -1,5 +1,5 @@
-// JUEGO PIEDRA-PAPEL-TIJERAS v3
-// Revisamos que no haya errores por partes del usuario
+// JUEGO PIEDRA-PAPEL-TIJERAS v4
+// Poder jugar varias partidas y marcador
 
 let nombre_jugador = ""
 
