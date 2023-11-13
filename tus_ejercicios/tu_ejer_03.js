@@ -2,3 +2,7 @@
 
 // A partir de un texto y un caracter quiero saber
 // cuantas veces aparece este caracter
+
+let texto = ""
+let caracter = ""
+
