@@ -1,13 +1,18 @@
+// let numero = 6
+// let nombre = prompt("Por favor dime tu nombre")
+// console.log("Hola " + nombre + "!");
 
+// saludar(nombre)
 
-function suma() {
-    console.log(1 + 5);
-    let resultado = 1+8
+// function saludar(name) {
+//     console.log("Hola " + name + "!");
+// }
+
+function sumar(num1, num2){
+    let resultado = num1 + num2
     return resultado
 }
 
-console.log(suma());
-// console.log(suma());
-console.log(suma());
-console.log(suma());
-console.log(suma());
+let resultado = sumar(1, 2)
+console.log(resultado);
+
