@@ -3,3 +3,7 @@
 // incluso si se escribe al revés.
 // En este ejercicio nuestro objetivo será invertir un
 // texto, como si se mirara en un espejo
+
+// dabale arroz la zorra al abad
+
+// abc -- cba
