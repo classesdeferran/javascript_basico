@@ -11,15 +11,15 @@
 let texto = "dabalearrozalazorraelabad"
 texto = "buenos dias"
 
-function revertirTexto(texto) {
+export function revertirTexto(texto) {
     let tamanyoTexto = texto.length
     let nuevoTexto = ""
     for (let i = tamanyoTexto-1; i >= 0; i--) {
-        nuevoTexto += texto[i].toLowercase()
+        nuevoTexto += texto[i].toLowerCase()
     }
     return nuevoTexto
     console.log(tamanyoTexto);
 }
 
-console.log(revertirTexto(texto)); 
+// console.log(revertirTexto(texto)); 
 
